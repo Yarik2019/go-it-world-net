@@ -100,3 +100,143 @@ body {
   text-align: right;
   color: #275f7a;
 }
+
+/* Modal */
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.56);
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 650px;
+  min-height: 854px;
+  background-color: #fff;
+  padding: 76px 67px 76px 50px;
+}
+
+.modal-close-btn {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border-radius: 50%;
+  background-color: #275f7a;
+  color: #fff;
+  border: none;
+}
+
+.modal-subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  text-align: justify;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 19px;
+}
+
+.modal-subtitle::before {
+  content: "";
+  display: block;
+  background-color: #d8d8d8;
+  width: 143px;
+  height: 2px;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.26;
+  letter-spacing: 0.03em;
+  color: #022c40;
+  margin-bottom: 31px;
+}
+
+.modal-title-part {
+  color: #000;
+}
+
+.modal-text {
+  font-size: 16px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  text-align: justify;
+  color: #022c40;
+  margin-bottom: 23px;
+}
+.modal-form {
+
+}
+
+.modal-label {
+  display: block;
+  margin-bottom: 23px;
+}
+
+.modal-input {
+  border: 1px solid #cacaca;
+  border-radius: 5px;
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  padding-left: 21px;
+  outline: transparent;
+}
+
+.modal-input:focus {
+  border-color: #275f7a;
+}
+
+.modal-input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  text-align: justify;
+  color: #000;
+}
+
+.modal-message {
+  height: 149px;
+  resize: none;
+  padding: 21px;
+}
+
+.modal-message-label {
+  margin-bottom: 33px;
+}
+
+.modal-button {
+  border-radius: 5px;
+  min-width: 181px;
+  height: 48px;
+  background-color: #022c40;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #fff;
+  border: none;
+}

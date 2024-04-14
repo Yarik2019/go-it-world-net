@@ -45,6 +45,18 @@ body {
   padding-right: 15px;
   margin: 0 auto;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .header {
   border-bottom: 3px solid #275f7a;
@@ -100,7 +112,103 @@ body {
   text-align: right;
   color: #275f7a;
 }
-
+/* request */
+.request {
+  padding: 100px 0;
+  background-color: #fafafa;
+}
+.request-title {
+  max-width: 707px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 36px;
+  line-height: 1.3;
+  text-align: center;
+  color: #2e363e;
+  margin-bottom: 26px;
+}
+.request-text {
+  font-size: 21px;
+  line-height: 1.43;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #2e363e;
+  margin-bottom: 50px;
+}
+.request-form {
+}
+.request-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.request-label {
+  display: block;
+  margin-right: 20px;
+}
+.request-input {
+  border: 1px solid rgba(0, 0, 0, 0.32);
+  border-radius: 5px;
+  padding: 16px 21px;
+  width: 280px;
+  height: 70px;
+  padding-left: 30px;
+  background: transparent;
+  outline: transparent;
+}
+.request-input:focus {
+  border-color: #275f7a;
+}
+.request-input::placeholder {
+  font-size: 17px;
+  line-height: 1.1;
+  color: #bfbfbf;
+}
+.request-btn {
+  border-radius: 5px;
+  padding: 25px 41px;
+  min-width: 280px;
+  height: 70px;
+  background-color: #275f7a;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.1;
+  text-align: center;
+  color: #fff;
+  border: none;
+}
+.request-checkbox {
+}
+.visually-hidden {
+}
+.request-check-box {
+  text-align: center;
+}
+.request-check-label {
+  font-size: 11px;
+  line-height: 1.3;
+  color: #7e868e;
+}
+.custom-checkbox {
+  border: 1px solid #000;
+  border-radius: 2px;
+  width: 12px;
+  height: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  margin-right: 7px;
+}
+.request-checkbox:checked + .request-check-label > .custom-checkbox {
+  fill: #fff;
+  background-color: #275f7a;
+  border: none;
+}
+.request-info {
+  color: #275f7a;
+  text-decoration: underline;
+}
 /* Modal */
 
 .backdrop {
@@ -187,7 +295,6 @@ body {
   margin-bottom: 23px;
 }
 .modal-form {
-
 }
 
 .modal-label {
